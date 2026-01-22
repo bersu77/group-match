@@ -98,8 +98,8 @@ function CreateGroupContent() {
         members: membersData,
       });
 
-      // Redirect to dashboard
-      router.push('/dashboard');
+      // Redirect to My Groups
+      router.push('/groups/my-groups');
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to create group';
       setError(errorMessage);
